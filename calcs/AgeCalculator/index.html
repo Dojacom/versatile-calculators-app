@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ismail Oladoja">
+    <meta name="revised" content="Saturday, July 15th, 2023, 01:15 pm" />
+    <title>Age Calculator</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.0/dist/chart.umd.min.js"></script>
+    <link rel="icon" href="img/Logo.png" sizes="32x32">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body class="body">
+    <section class="header">
+        <div class="logo">
+            <i class="ri-menu-line menu"></i>
+            <h2>VERSATILE<span> CALCULATOR.</span></h2>
+        </div>
+        <div class="header-items">
+            <i class="ri-search-2-line"></i>
+            <div class="dark-btn">
+                <i class="ri-moon-line moon"></i>
+                <i class="ri-sun-line sun"></i>
+            </div>
+            <i class="ri-notification-2-line"></i>
+            <i class="ri-wechat-2-line chat"></i>
+            <div class="profile">
+                <img src="img/profile.jpg" >
+            </div>
+        </div>
+    </section>
+
+
+    <!-----------main section------>
+<section class="main">
+<div class="sidebar">
+<ul class="sidebar-items">
+    <li>
+        <a href="/index.html" >
+            <span class="icon"><i class="ri-bar-chart-line"></i></span>
+            <div class="sidebar-item">Home</div>
+        </a>
+    </li>
+    <li>
+        <a href="/calcs/ArithmeticCalc/index.html">
+            <span class="icon"><i class="ri-calculator-line"></i></span>
+            <div class="sidebar-item">Arithmetic Calculator</div>
+        </a>
+    </li>
+    <li>
+        <a href="/calcs/BMICalculator/index.html">
+            <span class="icon"><i class="ri-body-scan-line"></i></span>
+            <div class="sidebar-item">BMI Calculator</div>
+        </a>
+    </li>
+    <li>
+        <a href="/calcs/AgeCalculator/index.html" class="active">
+            <span class="icon" ><i class="ri-calendar-event-fill"></i></span>
+            <div class="sidebar-item">Age Calculator</div>
+        </a>
+    </li>
+    <li>
+        <a href="/calcs/CurrencyConverter/index.html">
+            <span class="icon"><i class="ri-currency-fill"></i></span>
+            <div class="sidebar-item">Currency Converter</div>
+        </a>
+    </li>
+    <li>
+        <a href="/calcs/TempConverter/index.html">
+            <span class="icon"><i class="ri-temp-hot-line"></i></span>
+            <div class="sidebar-item">Temp Converter</div>
+        </a>
+    </li>
+    
+</ul>
+<ul class="sidebar-botom-item">
+    <li>
+        <a href="#">
+            <span class="icon"><i class="ri-settings-3-line"></i></span>
+            <div class="sidebar-item">Settings</div>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <span class="icon"><i class="ri-question-line"></i></span>
+            <div class="sidebar-item">Help</div>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <span class="icon"><i class="ri-logout-box-r-line"></i></span>
+            <div class="sidebar-item">Logout</div>
+        </a>
+    </li>
+</ul>
+
+</div>
+
+<!---------------calculators container----------------->
+
+<div class="main-container" id="main-container">
+
+    <h1 class="heading">Age Calculator</h1>
+    <main class="container">
+       <div class="input">
+        <!--BIRTHDATE-->
+        <label for="birthdate">Enter Your Birthdate :</label>
+        <input type="date" id="birthdate">
+       </div>
+       <!---Display output-->
+       <ul>
+        <li><span id="years"></span>Years</li>
+        <li><span id="months"></span>Months</li>
+        <li><span id="days"></span>Days</li>
+        <li><span id="hours"></span>Hours</li>
+        <li><span id="minutes"></span>Minutes</li>
+        <li><span id="seconds"></span>Seconds</li>
+       </ul>
+       <!---BUTTONS-->
+       <div class="btns">
+        <button onclick="calculate()">Calculate</button>
+        <button onclick="reset()">Reset</button>
+       </div>
+    </main>
+
+
+</div>
+
+
+
+
+
+
+
+
+</section> 
+
+
+<script src="script.js"></script>
+</body>
+</html>
